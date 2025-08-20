@@ -29,7 +29,7 @@ jobs:
         python -m pip install pandas
         python -m stubgen
         # python build.py --config Debug --platform win32
-        python build.py --config Release --platform win32
+        python build.py --config Release --platform win64
     - uses: actions/upload-artifact@v4
       with:
         name: windows
